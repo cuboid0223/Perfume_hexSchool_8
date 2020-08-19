@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>user Manage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./scss/all.css">
+</head>
+
+<body>
+    
+
+    <!-- menu start -->
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <ul class="col-md-6">
+                    <li><a href="#">CHANEL</a></li>
+                    <li><a href="#">Jo Malone</a></li>
+                    <li><a href="#">Curology</a></li>
+                    <li><a href="#">Dior</a></li>
+                    <li><a href="#">Chloe</a></li>
+                    <li><a href="#">ZARA</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- menu end -->
+
+    <!-- user manage start -->
+    <div class="user-manage">
+        <div class="container">
+            <div class="row">
+
+
+
+                <div class="col-md-2">
+                    <div class="user-menu">
+                        <h4>會員中心</h4>
+                        <ul>
+                            <li class="link"><a href="#">會員資料修改</a></li>
+                            <li class="link"><a href="#">訂單查詢</a></li>
+                            <li class="link"><a href="#">退／換貨申請</a></li>
+                        </ul>  
+                    </div>   
+                </div>
+
+
+
+                <div class="col-md-7">
+                    <div class="update-user-data">
+                        <form class="container">
+                            <h5>個人資料修改</h5>
+                            <hr>
+                            <!-- 會員帳號 -->
+                            <div class="form-group form-row">
+                                <div class="col-2">
+                                    <label>會員帳號</label>
+                                </div>
+                                <div class="col-7">
+                                    <p class="Email">email@example.com</p>
+                                </div>
+                            </div>
+                            <!-- 會員姓名 -->
+                            <div class="form-group form-row">
+                                <div class="col-2">
+                                    <label for="inputName">會員姓名</label>
+                                </div>
+                                <div class="col-7">
+                                    <input type="email" class="form-control" id="inputName" placeholder="姓名">
+                                </div>
+                            </div>
+                        
+                            <!-- 會員性別 -->
+                            <div class="form-group form-row">
+                                <div class="col-2">
+                                    <label for="inputSex">會員性別</label>
+                                </div>
+                                <div class="col-7">
+                                    <select class="custom-select" id="inputSex">
+                                        <option selected>男</option>
+                                        <option value="1">女</option>
+                                        <option value="2">其他</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- 電子信箱 -->
+                            <div class="form-group form-row">
+                                <div class="col-2">
+                                    <label for="inputEmail">電子信箱</label>
+                                </div>
+                                <div class="col-7">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
+                                </div>
+                            </div>
+                            <!-- 手機號碼 -->
+                            <div class="form-group form-row">
+                                <div class="col-2">
+                                    <label for="inputPhoneNumber">手機號碼</label>
+                                </div>
+                                <div class="col-7">
+                                    <input type="phone" class="form-control" id="inputPhoneNumber">
+                                </div>
+                            </div>
+                            <!-- 聯絡地址 -->
+                            <div class="form-group form-row">
+                                <div class="col-2">
+                                    <label for="inputContactAddress">聯絡地址</label>
+                                </div>
+                                <div class="col-7">
+                                    <select class="custom-select" id="inputContactAddress">
+                                        <option selected>台灣及離島</option>
+                                        <option value="2">...</option>
+                                    </select>
+                                    <div class="form-row">
+                                        <div class="col-6 mb-3">
+                                            <select class="custom-select my-1 mr-sm-2" id="inputContactAddress">
+                                                <option selected>高雄市</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <select class="custom-select my-1 mr-sm-2" id="inputContactAddress">
+                                                <option selected>鹽埕區</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <input type="address" class="form-control" id="inputContactAddress" placeholder="請輸入地址">
+                                </div>
+                                <div class="col-12 offset-md-2 check-box">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">我願意收到最新優惠情報</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 配送地址 -->
+                            <div class="form-group form-row">
+                                <div class="col-2">
+                                    <label for="inputAddress">配送地址</label>
+                                </div>
+                                <div class="col-7">
+                                    <select class="custom-select" id="inputAddress">
+                                        <option selected>台灣及離島</option>
+                                        <option value="2">...</option>
+                                    </select>
+                                    <div class="form-row">
+                                        <div class="col-6 mb-3">
+                                            <select class="custom-select my-1 mr-sm-2" id="inputAddress">
+                                                <option selected>高雄市</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <select class="custom-select my-1 mr-sm-2" id="inputAddress">
+                                                <option selected>鹽埕區</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <input type="address" class="form-control" id="inputAddress" placeholder="請輸入地址">
+                                </div>
+                        
+                            </div>
+                        
+                            <button type="submit" class="btn btn-primary  offset-md-2">確定修改</button>
+                        </form>
+                        
+                        <form class="container">
+                            <div class="update-user-password">
+                                <h5>修改密碼</h5>
+                                <hr>
+                                <!-- 舊密碼 -->
+                                <div class="form-group form-row">
+                                    <div class="col-2">
+                                        <label for="inputOldPassword">舊密碼</label>
+                                    </div>
+                                    <div class="col-7">
+                                        <input type="password" class="form-control" id="inputOldPassword">
+                                    </div>
+                                </div>
+                                <div class="form-group form-row mt-3">
+                                    <div class="col-2">
+                                        <label for="inputNewPassword">新密碼</label>
+                                    </div>
+                                    <div class="col-7">
+                                        <input type="password" class="form-control" id="inputNewPassword">
+                                    </div>
+                                </div>
+                                <div class="form-group form-row mt-3">
+                                    <div class="col-2">
+                                        <label for="inputOldPasswordAgain">確認新密碼</label>
+                                    </div>
+                                    <div class="col-7">
+                                        <input type="password" class="form-control" id="inputOldPasswordAgain">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary  offset-md-2">變更密碼</button>
+                            </div>
+                        </form>
+                    </div>                 
+                </div>
+
+
+
+
+                <div class="col-md-3">
+                    <div class="user-info">
+                        <div class="user-id-box">
+                            <img src="./img/img_user-manage/user-alt.svg" alt="user-icon">
+                            <pre>會員編碼 T00020080615</pre>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <p>購物車</p>
+                                <p>我的收藏</p>
+                                <p>已完成訂單</p>
+                                <p>會員紅利</p>
+                            </div>
+                            <div class="col-5">
+                                <p>56</p>
+                                <p>23</p>
+                                <p>8</p>
+                                <p>2680</p>
+                            </div>
+                            <div class="col-12">
+                                <p class="fs14">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+    <!-- user manage end -->
+
+    <!-- footer start-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="copyRight col-md-4">
+                    <a href="index.html">
+                        <img src="img/d’Perfumew.png" alt="logo">
+                    </a>
+                    <p>© 2020. All Rights Reserved.</p>
+                </div>
+                <ul class="col-md-3">
+                    <li> <a href="#">Product</a> </li>
+                    <li> <a href="#">Blog</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer end-->
+
+
+
+</body>
+
+</html>

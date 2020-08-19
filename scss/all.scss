@@ -1,0 +1,18 @@
+@import './bs4/bootstrap.scss';
+@import './grid';
+@import './myReset';
+@import './mixin';
+
+
+//layout
+@import './layout/navbar';
+@import './layout/menu';
+@import './layout/subscribe';
+@import './layout/footer';
+
+//page
+@import './page/index';
+@import './page/product-list';
+@import './page/login';
+@import './page/product';
+@import './page/user-manage';

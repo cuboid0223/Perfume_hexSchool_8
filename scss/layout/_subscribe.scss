@@ -1,0 +1,37 @@
+//subscribe start
+.subscribe {
+    background: url('https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c3cf876e-6395-4322-a837-3eacfbaa3a57&api_key=CometServer1&access_token=1597605609_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_13f3cbc0bd7f27853c76544536778f982b1e7ca3') center center;
+    background-size: 100% 100%;
+
+    // @include iphone() {
+    //     background: url('https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c3cf876e-6395-4322-a837-3eacfbaa3a57&api_key=CometServer1&access_token=1597538223_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_5f0ca161af2bfd5f90102eac3a5bec11f8f3a7b3') left center;
+    // }
+
+    h2 {
+        font-size: 32px;
+        color: #8D8D8D;
+        margin-top: 300px;
+        margin-bottom: 20px;
+    }
+
+    .mail-box {
+        border: 2px solid $primary-color;
+        border-radius: 4px;
+        margin-bottom: 132px;
+
+        .mail {
+            border: none;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .mail-btn {
+            border: none;
+            padding: 20px;
+            color: #FFF;
+            background-color: $primary-color;
+        }
+    }
+}
+
+//subscribe end

@@ -1,0 +1,89 @@
+$gray: #848484;
+
+.user-manage {
+    margin-top: 80px;
+
+    .user-menu {
+        h4 {
+            color: $gray;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        a {
+            color: $gray;
+            // background-color: red;
+            font-size: 16px;
+            margin-top: 24px;
+
+            &:after {
+                content: " ";
+                display: block;
+                width: 0%;
+                height: 2px;
+                margin: 2px 0px;
+                background-color: $primary-color;
+                opacity: 0;
+                transition: .2s .3s;
+            }
+        }
+
+        ul {
+            padding-inline-start: 0px;
+
+            .link:hover a:after {
+                opacity: 1;
+                width: 50%;
+            }
+        }
+
+
+    }
+
+    .update-user-password {
+        margin-top: 48px;
+
+    }
+
+    .user-info {
+        color: $gray;
+        font-size: 16px;
+
+        .user-id-box {
+            display: flex;
+
+            pre {
+                margin-bottom: 0;
+                margin-left: 5px;
+                color: $gray;
+            }
+        }
+
+        .fs14 {
+            font-size: 14px;
+        }
+
+        .check-box {
+            .form-check:checked {
+                background-color: $primary-color !important;
+            }
+
+            input:checked {
+                background-color: $primary-color !important;
+            }
+        }
+    }
+
+    label {
+        font-size: 16px;
+        color: $gray;
+    }
+
+    button {
+        padding: 8px 48px;
+    }
+
+    .Email {
+        color: $gray;
+    }
+}

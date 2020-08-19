@@ -1,0 +1,70 @@
+.perfume-navbar {
+    background-color: #FFF;
+    height: 56px;
+
+    &-brand {
+        display: block;
+        width: 128px;
+        height: 38px;
+    }
+
+    &-list-pad-desktop {
+        background-color: orange;
+        display: flex;
+        align-items: center;
+
+        @include iphone() {
+            display: none;
+        }
+
+        li {
+            width: 100%;
+
+            .link {
+                display: block;
+                background-color: red;
+                padding: 16px 0;
+                color: #8D8D8D;
+
+                img {
+                    display: inline-block;
+                }
+
+                p {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    &-list-phone {
+        display: none;
+        padding-inline-start: 0px;
+        height: 100%;
+        @include iphone() {
+            display: block;
+            display: flex;
+            align-items: center;
+        }
+
+    
+        .count-shopping-items-phone {
+            text-align: center;
+            font-size: 5px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            color: #FFF;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: 25px;
+            top: -3px;
+
+        }
+
+        .burger-icon {
+            cursor: pointer;
+
+        }
+    }
+}

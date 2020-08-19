@@ -1,0 +1,34 @@
+.login-container {
+    .container {
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    .login-box{
+        margin-top: 300px;
+        @include iphone(){
+            margin-top: 0px;
+        }
+    }
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .resign-btn {
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: $primary-color;
+        background-color: #fff;
+        border: 1px solid $primary-color;
+    }
+
+    .login-btn {
+        border-radius: 4px;
+        padding: 8px 16px;
+        border: none;
+        color: #FFF;
+        background-color: $primary-color;
+    }
+}

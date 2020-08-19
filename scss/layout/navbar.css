@@ -1,0 +1,27 @@
+.navbar {
+  background-color: blue;
+}
+
+.navbar-brand {
+  max-width: 128px;
+  height: 38px;
+  background-color: red;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: yellow;
+}
+
+.navbar-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-menu .nav-item {
+  background-color: brown;
+}
+/*# sourceMappingURL=navbar.css.map */

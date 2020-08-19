@@ -1,0 +1,43 @@
+.product-list {
+    background-color: #fff;
+
+    li {
+        margin-bottom: 60px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #000;
+    }
+
+    .price {
+        color: #000;
+
+        del {
+            color: #8D8D8D;
+        }
+    }
+
+    .add-shoppingCart {
+        margin-left: 10px;
+    }
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .perfume-pagination {
+        display: flex;
+        li+li{
+            margin-left: 20px;
+        }
+        .active {
+            color:$primary-color;
+        }
+        a {
+            color: #000;
+        }
+    }
+}
