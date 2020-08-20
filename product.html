@@ -16,6 +16,82 @@
 </head>
 
 <body>
+    <!-- navbar start -->
+    <div class="perfume-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    <a class="perfume-navbar-brand" href=index.html>
+                        <img src="./img/d’Perfume@2x.png" alt="logo">
+                    </a>
+                </div>
+    
+                <!-- perfume-navbar-list-phone -->
+                <div class="col-5 offset-2 d-block d-md-none">
+                    <ul class="perfume-navbar-list-phone">
+                        <li class="col-6">
+                            <div class="shopping-cart">
+                                <a class="link" href="#">
+                                    <img src="./img/shopping-cart.svg" alt="shopping-cart">
+                                    <p class="count-shopping-items-phone">3</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-6">
+                            <div class="burger-icon">
+                                <img src="./img/burger.svg" alt="burger-icon">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+                <!-- perfume-navbar-list-pad-desktop -->
+                <div class="col-md-6 offset-md-3 d-none  d-md-block active-menu">
+                    <ul class="row perfume-navbar-list-pad-desktop">
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="./product-list.html">
+                                <img src="./img/tshirt.svg" alt="">
+                                <p>Product</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="./log-in.html">
+                                <img src="./img/user-alt.svg" alt="">
+                                <p>log in</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Wishlist</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-block d-md-none item ">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Blog</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-block d-md-none  item">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Contact</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-none d-md-block shopping-cart-pad-desktop">
+                            <a class="link" href="#">
+                                <img src="./img/shopping-cart.svg" alt="shopping-cart">
+                                <p class="count-shopping-items">Cart(3)</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
 
     <!-- menu start -->
     <div class="menu">
@@ -33,32 +109,41 @@
         </div>
     </div>
     <!-- menu end -->
+
+
     <!-- product start -->
     <div class="product">
-        <div class="container">
-            <div class="row flex-sm-column-reverse flex-md-row">
+        <div class="container mt-md-5">
+            <div class="row flex-column-reverse flex-md-row">
                 <div class="col-md-8">
-                    <img src="img/img_product/photo-1594913785201-eb82e5c0bce4@2x.png" alt="photo">
+                    <img class=" d-none d-md-block" src="img/img_product/photo-1594913785201-eb82e5c0bce4@2x.png" alt="photo">
                     <div class="two-photo-box row">
                         <div class="col-md-6">
                             <img src="img/img_product/photo-1594913785162-e678a0c23ee9@2x.png" alt="photo">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 mt-2 mt-md-0">
                             <img src="img/img_product/photo-1594913365927-d35af29a0684@2x.png" alt="photo">
                         </div>
                     </div>
                     <img class="bottom-photo" src="img/img_product/photo-1594913785201-eb82e5c0bce4@2x.png" alt="photo">
                 </div>
                 <div class="col-md-4">
-                    <h3 class="product-name">CHANEL N°5</h3>
+                    <img class="bottom-photo d-block d-md-none" src="img/img_product/photo-1594913785201-eb82e5c0bce4@2x.png" alt="photo">
+                    <h3 class="product-name mt-3 mt-md-0">CHANEL N°5</h3>
                     <p class="product-info">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
                     <p class="product-price">NT$4,980</p>
-                    <div class="add-shopping-cart-box">
-                        <button type="button"  data-toggle="modal" data-target="#add-to-shopping-cart">加入購物車</button>
+                    <form class="row add-shopping-cart-box ">
+                        <select class="col-6 custom-select" id="inputAddress">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">其他</option>
+                        </select>
+                        <button class="col-6" type="button"  data-toggle="modal" data-target="#add-to-shopping-cart">加入購物車</button>
                         <!-- Modal start-->
                         <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <span>已加入購物車</span>
@@ -67,13 +152,13 @@
                             </div>
                         </div>
                         <!-- Modal end-->
-                    </div>
+                    </form>
                     <div class="heart-box">
                         <button type="button" data-toggle="modal" data-target="#add-to-wish-list"><img src="img/img_product-list-page/heart.svg" alt="heart"></button>
                         <!-- Modal start-->
                         <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <span>已加入我的收藏</span>
@@ -130,6 +215,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.burger-icon').click(function () {
+            $('.active-menu').toggleClass('d-block')
+        })
+    })
+</script>
 
 </body>
 

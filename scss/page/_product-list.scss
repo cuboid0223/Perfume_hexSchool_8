@@ -1,5 +1,9 @@
-.product-list {
+.product-main-list {
     background-color: #fff;
+    margin-top: 80px;
+    ul {
+        padding-inline-start: 0px;
+    }
 
     li {
         margin-bottom: 60px;
@@ -30,12 +34,16 @@
 
     .perfume-pagination {
         display: flex;
-        li+li{
+        padding-inline-start: 0px;
+
+        li+li {
             margin-left: 20px;
         }
+
         .active {
-            color:$primary-color;
+            color: $primary;
         }
+
         a {
             color: #000;
         }

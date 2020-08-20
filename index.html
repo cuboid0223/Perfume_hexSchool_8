@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+ <html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,44 +13,14 @@
     <div class="perfume-navbar">
         <div class="container">
             <div class="row">
-                <div class="col-5 col-md-3>
+                <div class="col-5 col-md-3">
                     <a class="perfume-navbar-brand" href=index.html >
                         <img src="./img/d’Perfume@2x.png" alt="logo">
                     </a>
                 </div>
-                <!-- perfume-navbar-list-pad-desktop -->
-                <div class="col-md-6 offset-md-3">
-                    <ul class="perfume-navbar-list-pad-desktop">
-                        <li class="item">
-                            <a class="link" href="./product-list.html">
-                                <img src="./img/tshirt.svg" alt="">
-                                <p>Product</p>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="./log-in.html">
-                                <img src="./img/user-alt.svg" alt="">
-                                <p>log in</p> 
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="#">
-                                <img src="./img/heart.svg" alt="">
-                                <p>Wishlist</p>
-                            </a>
-                        </li>
-                        <li class="shopping-cart-pad-desktop">
-                            <a class="link" href="#">
-                                <img src="./img/shopping-cart.svg" alt="shopping-cart">
-                                <p class="count-shopping-items">Cart(3)</p>
-                            </a>
-                        </li>
-                    </ul>    
-                </div>
-                
-                
+
                 <!-- perfume-navbar-list-phone -->
-                <div class="col-5 offset-2 d-md-none">
+                <div class="col-5 offset-2 d-block d-md-none">
                     <ul class="perfume-navbar-list-phone">
                         <li class="col-6">
                             <div class="shopping-cart">
@@ -69,7 +36,50 @@
                             </div>
                         </li>
                     </ul>
-                </div>    
+                </div>
+
+
+                <!-- perfume-navbar-list-pad-desktop -->
+                <div class="col-md-6 offset-md-3 d-none  d-md-block active-menu">
+                    <ul class="row perfume-navbar-list-pad-desktop">
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="./product-list.html">
+                                <img src="./img/tshirt.svg" alt="">
+                                <p>Product</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="./log-in.html">
+                                <img src="./img/user-alt.svg" alt="">
+                                <p>log in</p> 
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Wishlist</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-block d-md-none item ">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Blog</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-block d-md-none  item">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Contact</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-none d-md-block shopping-cart-pad-desktop">
+                            <a class="link" href="#">
+                                <img src="./img/shopping-cart.svg" alt="shopping-cart">
+                                <p class="count-shopping-items">Cart(3)</p>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>               
             </div>
         </div>
     </div>
@@ -79,14 +89,14 @@
     <div class="banner">
         <div class="container">
             <div class="row">
-                <div class="banner-info col-12 col-md-5 offset-md-7">
-                    <h2>Perfume your day</h2>
-                    <p>
-                        A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the
-                        person who
-                        wears it.
-                    </p>
-                    <button>Shop now</button>
+                <div class="banner-info col-12 col-md-5 offset-md-7  ">
+                        <h2>Perfume your day</h2>
+                        <p>
+                            A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the
+                            person who
+                            wears it.
+                        </p>
+                        <button>Shop now</button>
                 </div>
             </div>
         </div>  
@@ -240,10 +250,10 @@
             <div class="row">
                 <div class="col-12 col-md-4">
                     <h2>記得 <br> 訂閱以獲取更多資訊！</h2>
-                    <div5 class="mail-box row">
+                    <div class="mail-box row">
                         <input class="mail col-8" type="text" placeholder="Your email address">
                         <input class="mail-btn col-4" type="button" value="Subscribe">
-                    </div5
+                    </div>
                 </div>
             </div>
         </div>
@@ -270,6 +280,25 @@
     </div>
     <!-- footer end-->
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.burger-icon').click(function () {
+            //$('.active-menu').toggleClass('transition')
+            $('.active-menu').toggleClass('d-block')
+            
+        })
+    })
+</script>
 
        
     </body>

@@ -1,17 +1,6 @@
 .product {
     .container {
-        margin-top: 80px;
-    }
-
-    .two-photo-box,
-    .bottom-photo {}
-
-    .photo-display-phone {
-        display: none;
-
-        @include iphone {
-            display: block
-        }
+        // margin-top: 80px;
     }
 
     .two-photo-box {
@@ -34,12 +23,19 @@
     }
 
     .add-shopping-cart-box {
+        border: 2px solid $primary;
+        border-radius: 4px 4px 4px 4px;
+        
+
+        select {
+            border-radius: 0px;
+        }
+
         button {
-            background-color: $primary-color;
-            border: 2px solid $primary-color;
-            border-radius: 0px 4px 4px 0px;
+            background-color: $primary;
+            border: 2px solid $primary;
+        
             color: #FFF;
-            padding: 14px 55px;
         }
     }
 
@@ -79,7 +75,7 @@
 
 .modal-body {
     span {
-        color: $primary-color;
+        color: $primary;
         display: flex;
         justify-content: center;
         align-items: center;

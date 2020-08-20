@@ -1,6 +1,6 @@
 .perfume-navbar {
     background-color: #FFF;
-    height: 56px;
+
 
     &-brand {
         display: block;
@@ -9,25 +9,36 @@
     }
 
     &-list-pad-desktop {
-        background-color: orange;
+        padding-inline-start: 0px;
+        margin-bottom: 0;
         display: flex;
-        align-items: center;
 
-        @include iphone() {
-            display: none;
-        }
+
 
         li {
+            margin-top: 8px;
             width: 100%;
+
+            @include iphone {
+                background-color: #707070;
+                margin-top: 1px;
+                text-align: center;
+            }
 
             .link {
                 display: block;
-                background-color: red;
-                padding: 16px 0;
-                color: #8D8D8D;
+                color: $gray;
+
+                @include iphone {
+                    color: #FFF;
+                }
 
                 img {
                     display: inline-block;
+
+                    @include iphone {
+                        display: none;
+                    }
                 }
 
                 p {
@@ -38,21 +49,19 @@
     }
 
     &-list-phone {
-        display: none;
+        display: flex;
         padding-inline-start: 0px;
-        height: 100%;
-        @include iphone() {
-            display: block;
-            display: flex;
-            align-items: center;
+        margin-bottom: 0rem;
+
+        li {
+            margin-top: 8px;
         }
 
-    
         .count-shopping-items-phone {
             text-align: center;
             font-size: 5px;
             border-radius: 50%;
-            background-color: $primary-color;
+            background-color: $primary;
             color: #FFF;
             width: 15px;
             height: 15px;
@@ -66,5 +75,9 @@
             cursor: pointer;
 
         }
+
+        // .transition {
+        //     transition-duration: 4s;
+        // }
     }
 }

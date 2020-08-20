@@ -10829,7 +10829,6 @@ li {
 
 .perfume-navbar {
   background-color: #FFF;
-  height: 56px;
 }
 
 .perfume-navbar-brand {
@@ -10839,34 +10838,46 @@ li {
 }
 
 .perfume-navbar-list-pad-desktop {
-  background-color: orange;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (max-width: 568px) {
-  .perfume-navbar-list-pad-desktop {
-    display: none;
-  }
 }
 
 .perfume-navbar-list-pad-desktop li {
+  margin-top: 8px;
   width: 100%;
+}
+
+@media (max-width: 568px) {
+  .perfume-navbar-list-pad-desktop li {
+    background-color: #707070;
+    margin-top: 1px;
+    text-align: center;
+  }
 }
 
 .perfume-navbar-list-pad-desktop li .link {
   display: block;
-  background-color: red;
-  padding: 16px 0;
-  color: #8D8D8D;
+  color: #848484;
+}
+
+@media (max-width: 568px) {
+  .perfume-navbar-list-pad-desktop li .link {
+    color: #FFF;
+  }
 }
 
 .perfume-navbar-list-pad-desktop li .link img {
   display: inline-block;
+}
+
+@media (max-width: 568px) {
+  .perfume-navbar-list-pad-desktop li .link img {
+    display: none;
+  }
 }
 
 .perfume-navbar-list-pad-desktop li .link p {
@@ -10874,29 +10885,23 @@ li {
 }
 
 .perfume-navbar-list-phone {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
-  height: 100%;
+  margin-bottom: 0rem;
 }
 
-@media (max-width: 568px) {
-  .perfume-navbar-list-phone {
-    display: block;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.perfume-navbar-list-phone li {
+  margin-top: 8px;
 }
 
 .perfume-navbar-list-phone .count-shopping-items-phone {
   text-align: center;
   font-size: 5px;
   border-radius: 50%;
-  background-color: #AC8A46;
+  background-color: #916000;
   color: #FFF;
   width: 15px;
   height: 15px;
@@ -10910,7 +10915,7 @@ li {
 }
 
 .menu {
-  background-color: #AC8A46;
+  background-color: #916000;
 }
 
 @media (max-width: 568px) {
@@ -10937,8 +10942,14 @@ li {
 }
 
 .subscribe {
-  background: url("https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c3cf876e-6395-4322-a837-3eacfbaa3a57&api_key=CometServer1&access_token=1597605609_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_13f3cbc0bd7f27853c76544536778f982b1e7ca3") center center;
+  background: url("https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c3cf876e-6395-4322-a837-3eacfbaa3a57&api_key=CometServer1&access_token=1597967415_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_998160260722ea8de8a785e1d234bed114d35370") center center;
   background-size: 100% 100%;
+}
+
+@media (max-width: 568px) {
+  .subscribe {
+    background: url("https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c9d876de-3031-4bf6-a618-1ab8f9b84438&api_key=CometServer1&access_token=1597967415_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_998160260722ea8de8a785e1d234bed114d35370") no-repeat;
+  }
 }
 
 .subscribe h2 {
@@ -10949,7 +10960,7 @@ li {
 }
 
 .subscribe .mail-box {
-  border: 2px solid #AC8A46;
+  border: 2px solid #916000;
   border-radius: 4px;
   margin-bottom: 132px;
 }
@@ -10964,11 +10975,12 @@ li {
   border: none;
   padding: 20px;
   color: #FFF;
-  background-color: #AC8A46;
+  background-color: #916000;
 }
 
 .footer {
-  background-color: #AC8A46;
+  background-color: #916000;
+  margin-top: 0px;
 }
 
 .footer .row {
@@ -11026,37 +11038,43 @@ li {
 .banner {
   background: url("../img/banner.png");
   background-position: center center;
-  background-size: 100% 100%;
+  width: 100%;
   height: 870px;
 }
 
 @media (max-width: 767px) {
   .banner {
-    max-height: 600px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 568px) {
+  .banner {
+    background: url("../img/photo-1588159343745-445ae0b16383.png") no-repeat;
+    height: 480px;
+    background-size: cover;
   }
 }
 
 .banner-info {
-  width: 445px;
-  height: 300px;
-  margin-top: 300px;
   color: #FFF;
   text-align: left;
+  margin-top: 300px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 767px) {
   .banner-info {
     margin-top: 100px;
   }
 }
 
 .banner-info h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 .banner-info p {
-  font-size: 24px;
+  font-size: 20px;
   height: 144px;
 }
 
@@ -11068,7 +11086,7 @@ li {
   background-color: transparent;
   border: 2px solid #FFF;
   border-radius: 30px;
-  margin-top: 60px;
+  margin-top: 16px;
 }
 
 .product-introduce-list .container {
@@ -11245,28 +11263,34 @@ li {
   font-size: 16px;
 }
 
-.product-list {
+.product-main-list {
   background-color: #fff;
+  margin-top: 80px;
 }
 
-.product-list li {
+.product-main-list ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.product-main-list li {
   margin-bottom: 60px;
 }
 
-.product-list h2 {
+.product-main-list h2 {
   font-size: 24px;
   color: #000;
 }
 
-.product-list .price {
+.product-main-list .price {
   color: #000;
 }
 
-.product-list .price del {
+.product-main-list .price del {
   color: #8D8D8D;
 }
 
-.product-list .add-shoppingCart {
+.product-main-list .add-shoppingCart {
   margin-left: 10px;
 }
 
@@ -11286,6 +11310,8 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 .flex-box .perfume-pagination li + li {
@@ -11293,7 +11319,7 @@ li {
 }
 
 .flex-box .perfume-pagination .active {
-  color: #AC8A46;
+  color: #916000;
 }
 
 .flex-box .perfume-pagination a {
@@ -11330,9 +11356,9 @@ li {
 .login-container .resign-btn {
   border-radius: 4px;
   padding: 8px 16px;
-  color: #AC8A46;
+  color: #916000;
   background-color: #fff;
-  border: 1px solid #AC8A46;
+  border: 1px solid #916000;
 }
 
 .login-container .login-btn {
@@ -11340,21 +11366,7 @@ li {
   padding: 8px 16px;
   border: none;
   color: #FFF;
-  background-color: #AC8A46;
-}
-
-.product .container {
-  margin-top: 80px;
-}
-
-.product .photo-display-phone {
-  display: none;
-}
-
-@media (max-width: 568px) {
-  .product .photo-display-phone {
-    display: block;
-  }
+  background-color: #916000;
 }
 
 .product .two-photo-box {
@@ -11375,12 +11387,19 @@ li {
   font-size: 20px;
 }
 
+.product .add-shopping-cart-box {
+  border: 2px solid #916000;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.product .add-shopping-cart-box select {
+  border-radius: 0px;
+}
+
 .product .add-shopping-cart-box button {
-  background-color: #AC8A46;
-  border: 2px solid #AC8A46;
-  border-radius: 0px 4px 4px 0px;
+  background-color: #916000;
+  border: 2px solid #916000;
   color: #FFF;
-  padding: 14px 55px;
 }
 
 .product .purchase-note,
@@ -11419,7 +11438,7 @@ li {
 }
 
 .modal-body span {
-  color: #AC8A46;
+  color: #916000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11431,14 +11450,9 @@ li {
           align-items: center;
 }
 
-.user-manage {
-  margin-top: 80px;
-}
-
 .user-manage .user-menu h4 {
   color: #848484;
   font-size: 20px;
-  font-weight: normal;
 }
 
 .user-manage .user-menu a {
@@ -11453,7 +11467,7 @@ li {
   width: 0%;
   height: 2px;
   margin: 2px 0px;
-  background-color: #AC8A46;
+  background-color: #916000;
   opacity: 0;
   -webkit-transition: .2s .3s;
   transition: .2s .3s;
@@ -11462,11 +11476,19 @@ li {
 .user-manage .user-menu ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .user-manage .user-menu ul .link:hover a:after {
   opacity: 1;
   width: 50%;
+}
+
+@media (max-width: 568px) {
+  .user-manage .update-user-data {
+    margin-top: 40px;
+  }
 }
 
 .user-manage .update-user-password {
@@ -11490,16 +11512,14 @@ li {
   color: #848484;
 }
 
+@media (max-width: 568px) {
+  .user-manage .user-info .user-id-box pre {
+    font-size: 20px;
+  }
+}
+
 .user-manage .user-info .fs14 {
   font-size: 14px;
-}
-
-.user-manage .user-info .check-box .form-check:checked {
-  background-color: #AC8A46 !important;
-}
-
-.user-manage .user-info .check-box input:checked {
-  background-color: #AC8A46 !important;
 }
 
 .user-manage label {
@@ -11513,5 +11533,9 @@ li {
 
 .user-manage .Email {
   color: #848484;
+}
+
+.footer {
+  margin-top: 0px;
 }
 /*# sourceMappingURL=all.css.map */

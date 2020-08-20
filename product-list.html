@@ -16,6 +16,82 @@
 </head>
 
 <body>
+    <!-- navbar start -->
+    <div class="perfume-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    <a class="perfume-navbar-brand" href=index.html>
+                        <img src="./img/d’Perfume@2x.png" alt="logo">
+                    </a>
+                </div>
+    
+                <!-- perfume-navbar-list-phone -->
+                <div class="col-5 offset-2 d-block d-md-none">
+                    <ul class="perfume-navbar-list-phone">
+                        <li class="col-6">
+                            <div class="shopping-cart">
+                                <a class="link" href="#">
+                                    <img src="./img/shopping-cart.svg" alt="shopping-cart">
+                                    <p class="count-shopping-items-phone">3</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-6">
+                            <div class="burger-icon">
+                                <img src="./img/burger.svg" alt="burger-icon">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+                <!-- perfume-navbar-list-pad-desktop -->
+                <div class="col-md-6 offset-md-3 d-none  d-md-block active-menu">
+                    <ul class="row perfume-navbar-list-pad-desktop">
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="./product-list.html">
+                                <img src="./img/tshirt.svg" alt="">
+                                <p>Product</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="./log-in.html">
+                                <img src="./img/user-alt.svg" alt="">
+                                <p>log in</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Wishlist</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-block d-md-none item ">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Blog</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-block d-md-none  item">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Contact</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-none d-md-block shopping-cart-pad-desktop">
+                            <a class="link" href="#">
+                                <img src="./img/shopping-cart.svg" alt="shopping-cart">
+                                <p class="count-shopping-items">Cart(3)</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+    
     <!-- menu start -->
     <div class="menu">
         <div class="container">
@@ -34,7 +110,7 @@
     <!-- menu end -->
 
     <!-- product list start -->
-    <div class="product-list">
+    <div class="product-main-list">
         <div class="container">
             <ul class="row">
                 <li class="col-6 col-md-3">
@@ -47,13 +123,36 @@
                             <del>NT$1,580</del>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a class="add-shoppingCart" href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
-                    
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->  
                 </li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="/Users/jeff/Desktop/perfume/img/img_product-list-page/photo-1530630458144-014709e10016@2x.png" alt="photo">
@@ -63,36 +162,108 @@
                         NT$1,380
                         <del>NT$1,580</del>
                     </div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1566977776052-6e61e35bf9be@2x.png" alt="photo">
                     <h2>Poppy & Barley</h2>
                     <pre class="brand-name">Jo Malone</pre>
                     <div class="price">NT$1,380</div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1578996834254-13d1b661a5ed@2x.png" alt="photo">
                     <h2>Poppy & Barley</h2>
                     <pre class="brand-name">Jo Malone</pre>
                     <div class="price">NT$1,380</div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1582211594533-268f4f1edcb9@2x.png" alt="photo">
@@ -102,12 +273,36 @@
                         NT$1,380
                         <del>NT$1,580</del>
                     </div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1584435731369-1e74c4e9385e@2x.png" alt="photo">
@@ -117,36 +312,108 @@
                         NT$1,380
                         <del>NT$1,580</del>
                     </div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1585120040315-2241b774ad0f@2x.png" alt="photo">
                     <h2>Poppy & Barley</h2>
                     <pre class="brand-name">Jo Malone</pre>
                     <div class="price">NT$1,380</div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1592842414746-a2fd2101381f@2x.png" alt="photo">
                     <h2>Poppy & Barley</h2>
                     <pre class="brand-name">Jo Malone</pre>
                     <div class="price">NT$1,380</div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1592247691114-69a06342531a@2x.png" alt="photo">
@@ -156,12 +423,36 @@
                         NT$1,380
                         <del>NT$1,580</del>
                     </div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1594913366159-1832cfbe7ca1@2x.png" alt="photo">
@@ -171,36 +462,108 @@
                         NT$1,380
                         <del>NT$1,580</del>
                     </div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1578996834254-13d1b661a5ed@2x.png" alt="photo">
                     <h2>Poppy & Barley</h2>
                     <pre class="brand-name">Jo Malone</pre>
                     <div class="price">NT$1,380</div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
                 <li class="col-6 col-md-3"><a href="./product.html">
                     <img src="img/img_product-list-page/photo-1519669011783-4eaa95fa1b7d@2x.png" alt="photo">
                     <h2>Poppy & Barley</h2>
                     <pre class="brand-name">Jo Malone</pre>
                     <div class="price">NT$1,380</div>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#add-to-wish-list">
                         <img src="img/img_product-list-page/heart.svg" alt="heart">
                     </a>
-                    <a href="#">
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-wish-list" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入我的收藏</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
+                    <a class="add-shoppingCart" href="#" data-toggle="modal" data-target="#add-to-shopping-cart">
                         <img src="img/img_product-list-page/shopping-cart.svg" alt="add-shoppingCart">
                     </a>
+                    <!-- Modal start-->
+                    <div class="modal fade" id="add-to-shopping-cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <span>已加入購物車</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end-->
                 </a></li>
             </ul>
         </div>
@@ -266,8 +629,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.burger-icon').click(function () {
+            $('.active-menu').toggleClass('d-block')
+        })
+    })
+</script>
 
 </body>
 

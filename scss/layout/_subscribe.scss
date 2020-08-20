@@ -1,21 +1,25 @@
 //subscribe start
 .subscribe {
-    background: url('https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c3cf876e-6395-4322-a837-3eacfbaa3a57&api_key=CometServer1&access_token=1597605609_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_13f3cbc0bd7f27853c76544536778f982b1e7ca3') center center;
+    background: url('https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c3cf876e-6395-4322-a837-3eacfbaa3a57&api_key=CometServer1&access_token=1597967415_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_998160260722ea8de8a785e1d234bed114d35370') center center;
+    //background: url('/img/photo-1532413992378-f169ac26fff0-1.svg') center center;
+    //不知道為什麼抓不到？
     background-size: 100% 100%;
 
-    // @include iphone() {
-    //     background: url('https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c3cf876e-6395-4322-a837-3eacfbaa3a57&api_key=CometServer1&access_token=1597538223_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_5f0ca161af2bfd5f90102eac3a5bec11f8f3a7b3') left center;
-    // }
+    @include iphone {
+        background: url('https://cdn-sharing.adobecc.com/id/urn:aaid:sc:US:dc5ebe5c-3e56-4981-a010-158b5ded0e72;version=0?component_id=c9d876de-3031-4bf6-a618-1ab8f9b84438&api_key=CometServer1&access_token=1597967415_urn%3Aaaid%3Asc%3AUS%3Adc5ebe5c-3e56-4981-a010-158b5ded0e72%3Bpublic_998160260722ea8de8a785e1d234bed114d35370') no-repeat;
+    }
 
     h2 {
         font-size: 32px;
         color: #8D8D8D;
+
+
         margin-top: 300px;
         margin-bottom: 20px;
     }
 
     .mail-box {
-        border: 2px solid $primary-color;
+        border: 2px solid $primary;
         border-radius: 4px;
         margin-bottom: 132px;
 
@@ -29,7 +33,7 @@
             border: none;
             padding: 20px;
             color: #FFF;
-            background-color: $primary-color;
+            background-color: $primary;
         }
     }
 }

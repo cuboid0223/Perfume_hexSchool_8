@@ -1,13 +1,10 @@
-$gray: #848484;
+
 
 .user-manage {
-    margin-top: 80px;
-
     .user-menu {
         h4 {
             color: $gray;
             font-size: 20px;
-            font-weight: normal;
         }
 
         a {
@@ -22,7 +19,7 @@ $gray: #848484;
                 width: 0%;
                 height: 2px;
                 margin: 2px 0px;
-                background-color: $primary-color;
+                background-color: $primary;
                 opacity: 0;
                 transition: .2s .3s;
             }
@@ -30,6 +27,8 @@ $gray: #848484;
 
         ul {
             padding-inline-start: 0px;
+            margin-top: 40px;
+            margin-bottom: 40px;
 
             .link:hover a:after {
                 opacity: 1;
@@ -38,6 +37,12 @@ $gray: #848484;
         }
 
 
+    }
+
+    .update-user-data {
+        @include iphone {
+            margin-top: 40px;
+        }
     }
 
     .update-user-password {
@@ -56,6 +61,10 @@ $gray: #848484;
                 margin-bottom: 0;
                 margin-left: 5px;
                 color: $gray;
+
+                @include iphone {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -63,15 +72,6 @@ $gray: #848484;
             font-size: 14px;
         }
 
-        .check-box {
-            .form-check:checked {
-                background-color: $primary-color !important;
-            }
-
-            input:checked {
-                background-color: $primary-color !important;
-            }
-        }
     }
 
     label {
@@ -86,4 +86,9 @@ $gray: #848484;
     .Email {
         color: $gray;
     }
+
+}
+//不加這個，不知道為什麼有 margin-top:60px;
+.footer {
+    margin-top: 0px;
 }

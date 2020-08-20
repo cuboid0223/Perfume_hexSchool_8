@@ -1,32 +1,39 @@
 .banner {
     background: url('../img/banner.png');
     background-position: center center;
-    background-size: 100% 100%;
+
+    width: 100%;
     height: 870px;
 
     @include pad() {
-        max-height: 600px;
+        height: 600px;
+    }
+
+    @include iphone {
+        background: url('../img/photo-1588159343745-445ae0b16383.png') no-repeat;
+        height: 480px;
+        background-size: cover;
     }
 
     &-info {
-        width: 445px;
-        height: 300px;
-        margin-top: 300px;
+        // width: 445px;
+        // height: 300px;
         // background-color: red;
         color: #FFF;
         text-align: left;
+        margin-top: 300px;
 
-        @include iphone() {
+        @include pad {
             margin-top: 100px;
         }
 
         h2 {
-            font-size: 40px;
+            font-size: 32px;
             font-weight: bold;
         }
 
         p {
-            font-size: 24px;
+            font-size: 20px;
             height: 144px;
         }
 
@@ -38,7 +45,7 @@
             background-color: transparent;
             border: 2px solid #FFF;
             border-radius: 30px;
-            margin-top: 60px;
+            margin-top: 16px;
         }
     }
 }
@@ -51,9 +58,10 @@
     }
 
     li {
-        @include iphone(){
+        @include iphone() {
             margin-top: 32px;
         }
+
         &:nth-child(odd) {
             display: flex;
             flex-direction: row-reverse;

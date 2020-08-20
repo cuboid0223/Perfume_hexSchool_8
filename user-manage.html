@@ -16,6 +16,81 @@
 </head>
 
 <body>
+    <!-- navbar start -->
+    <div class="perfume-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3">
+                    <a class="perfume-navbar-brand" href=index.html>
+                        <img src="./img/d’Perfume@2x.png" alt="logo">
+                    </a>
+                </div>
+    
+                <!-- perfume-navbar-list-phone -->
+                <div class="col-5 offset-2 d-block d-md-none">
+                    <ul class="perfume-navbar-list-phone">
+                        <li class="col-6">
+                            <div class="shopping-cart">
+                                <a class="link" href="#">
+                                    <img src="./img/shopping-cart.svg" alt="shopping-cart">
+                                    <p class="count-shopping-items-phone">3</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-6">
+                            <div class="burger-icon">
+                                <img src="./img/burger.svg" alt="burger-icon">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+                <!-- perfume-navbar-list-pad-desktop -->
+                <div class="col-md-6 offset-md-3 d-none  d-md-block active-menu">
+                    <ul class="row perfume-navbar-list-pad-desktop">
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="./product-list.html">
+                                <img src="./img/tshirt.svg" alt="">
+                                <p>Product</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="./log-in.html">
+                                <img src="./img/user-alt.svg" alt="">
+                                <p>log in</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 item">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Wishlist</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-block d-md-none item ">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Blog</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-block d-md-none  item">
+                            <a class="link" href="#">
+                                <img src="./img/heart.svg" alt="">
+                                <p>Contact</p>
+                            </a>
+                        </li>
+                        <li class="col-12 col-md-3 d-none d-md-block shopping-cart-pad-desktop">
+                            <a class="link" href="#">
+                                <img src="./img/shopping-cart.svg" alt="shopping-cart">
+                                <p class="count-shopping-items">Cart(3)</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
     
 
     <!-- menu start -->
@@ -36,16 +111,14 @@
     <!-- menu end -->
 
     <!-- user manage start -->
-    <div class="user-manage">
+    <div class="user-manage mt-md-5">
         <div class="container">
             <div class="row">
 
-
-
-                <div class="col-md-2">
+                <div class="col-md-2 order-1">
                     <div class="user-menu">
-                        <h4>會員中心</h4>
-                        <ul>
+                        <h4 class="d-none d-md-block">會員中心</h4>
+                        <ul class="d-flex flex-md-column justify-content-around">
                             <li class="link"><a href="#">會員資料修改</a></li>
                             <li class="link"><a href="#">訂單查詢</a></li>
                             <li class="link"><a href="#">退／換貨申請</a></li>
@@ -54,8 +127,7 @@
                 </div>
 
 
-
-                <div class="col-md-7">
+                <div class="col-md-7 order-3 order-md-1">
                     <div class="update-user-data">
                         <form class="container">
                             <h5>個人資料修改</h5>
@@ -134,7 +206,7 @@
                                     </div>
                                     <input type="address" class="form-control" id="inputContactAddress" placeholder="請輸入地址">
                                 </div>
-                                <div class="col-12 offset-md-2 check-box">
+                                <div class="col-12 offset-2 check-box">
                                     <div class="form-group form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                         <label class="form-check-label" for="exampleCheck1">我願意收到最新優惠情報</label>
@@ -168,7 +240,7 @@
                         
                             </div>
                         
-                            <button type="submit" class="btn btn-primary  offset-md-2">確定修改</button>
+                            <button type="submit" class="btn btn-primary offset-2">確定修改</button>
                         </form>
                         
                         <form class="container">
@@ -200,29 +272,27 @@
                                         <input type="password" class="form-control" id="inputOldPasswordAgain">
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary  offset-md-2">變更密碼</button>
+                                <button type="submit" class="btn btn-primary offset-2">變更密碼</button>
                             </div>
                         </form>
                     </div>                 
                 </div>
 
 
-
-
-                <div class="col-md-3">
+                <div class="col-md-3 order-2 order-md-2">
                     <div class="user-info">
                         <div class="user-id-box">
                             <img src="./img/img_user-manage/user-alt.svg" alt="user-icon">
                             <pre>會員編碼 T00020080615</pre>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-6">
+                            <div class="col-4">
                                 <p>購物車</p>
                                 <p>我的收藏</p>
                                 <p>已完成訂單</p>
                                 <p>會員紅利</p>
                             </div>
-                            <div class="col-5">
+                            <div class="col-8">
                                 <p>56</p>
                                 <p>23</p>
                                 <p>8</p>
@@ -237,11 +307,8 @@
             </div>
         </div>
     </div>
-
-
-
-   
     <!-- user manage end -->
+
 
     <!-- footer start-->
     <div class="footer">
@@ -263,6 +330,23 @@
     </div>
     <!-- footer end-->
 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.burger-icon').click(function () {
+            $('.active-menu').toggleClass('d-block')
+        })
+    })
+</script>
 
 
 </body>
